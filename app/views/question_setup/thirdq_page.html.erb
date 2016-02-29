@@ -1,1 +1,98 @@
-thirdq_page.html.erb
+<%= form_for @survey do |f| %>
+
+<!-- need to add question 11 here -->
+	<%= f.radio_button :q_eleven, value: 0 %>
+	<%= f.label :q_eleven, "I am no more irritated by things than I ever was.", value: 0 %>
+
+	<%= f.radio_button :q_eleven, value: 1 %>
+	<%= f.label :q_eleven, "I am slightly more irritated now than usual.", value: 1 %>
+
+	<%= f.radio_button :q_eleven, value: 2 %>
+	<%= f.label :q_eleven, "I am quite annoyed or irritated a good deal of the time.", value: 2 %>
+
+	<%= f.radio_button :q_eleven, value: 3 %>
+	<%= f.label :q_eleven, "I feel irritated all the time.", value: 3 %>
+
+	<%= f.button :submit %>
+
+<% end %>
+
+<%= form_for @survey do |f| %>
+
+<!-- need to add question 12 here -->
+
+	<%= f.radio_button :q_twelve, value: 0 %>
+	<%= f.label :q_twelve, "I have not lost interest in other people.", value: 0 %>
+
+	<%= f.radio_button :q_twelve, value: 1 %>
+	<%= f.label :q_twelve, "I am less interested in other people than I used to be.", value: 1 %>
+
+	<%= f.radio_button :q_twelve, value: 2 %>
+	<%= f.label :q_twelve, "I have lost most of my interest in other people.", value: 2 %>
+
+	<%= f.radio_button :q_twelve, value: 3 %>
+	<%= f.label :q_twelve, "I have lost all of my interest in other people.", value: 3 %>
+
+	<%= f.button :submit %>
+
+<% end %>
+
+<%= form_for @survey do |f| %>
+
+<!-- need to add question 13 here -->
+
+	<%= f.radio_button :q_thirteen, value: 0 %>
+	<%= f.label :q_thirteen, "I make decisions about as well as I ever could.", value: 0 %>
+
+	<%= f.radio_button :q_thirteen, value: 1 %>
+	<%= f.label :q_thirteen, "I put off making decisions more than I used to.", value: 1 %>
+
+	<%= f.radio_button :q_thirteen, value: 2 %>
+	<%= f.label :q_thirteen, "I have greater difficulty in making decisions more than I used to.", value: 2 %>
+
+	<%= f.radio_button :q_thirteen, value: 3 %>
+	<%= f.label :q_thirteen, "I can't make decisions at all anymore.", value: 3 %>
+
+	<%= f.button :submit %>
+
+<% end %>
+
+<%= form_for @survey do |f| %>
+
+<!-- need to add question 14 here -->
+
+	<%= f.radio_button :q_fourteen, value: 0 %>
+	<%= f.label :q_fourteen, "I don't have any thoughts of killing myself.", value: 0 %>
+
+	<%= f.radio_button :q_fourteen, value: 1 %>
+	<%= f.label :q_fourteen, "I have thoughts of killing myself, but I would not carry them out.", value: 1 %>
+
+	<%= f.radio_button :q_fourteen, value: 2 %>
+	<%= f.label :q_fourteen, "I would like to kill myself.", value: 2 %>
+
+	<%= f.radio_button :q_fourteen, value: 3 %>
+	<%= f.label :q_fourteen, "I would kill myself if I had the chance.", value: 3 %>
+
+	<%= f.button :submit %>
+
+<% end %>
+
+<%= form_for @survey do |f| %>
+
+<!-- need to add question 15 here -->
+
+	<%= f.radio_button :q_ten, value: 0 %>
+	<%= f.label :q_ten, "I don't cry any more than usual.", value: 0 %>
+
+	<%= f.radio_button :q_ten, value: 1 %>
+	<%= f.label :q_ten, "I cry more now than I used to.", value: 1 %>
+
+	<%= f.radio_button :q_ten, value: 2 %>
+	<%= f.label :q_ten, "I cry all the time now.", value: 2 %>
+
+	<%= f.radio_button :q_ten, value: 3 %>
+	<%= f.label :q_ten, "I used to be able to cry, but now I can't cry even though I want to.", value: 3 %>
+
+	<%= f.button :submit %>
+
+<% end %>
