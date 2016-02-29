@@ -1,7 +1,5 @@
 class QuestionsController < ApplicationController
-
   def index
-    # render :index
   end
 
   def create
@@ -11,18 +9,34 @@ class QuestionsController < ApplicationController
   end
 
   def new
+    @survey = Question.new
   end
 
   def edit
   end
 
   def create
+    @survey = Question.new(survey_params)
+  end
+
+  def survey_params
+    params.require(:questions).permit(:q_one,:q_two,:q_three)
   end
 
   def destroy
   end
 
 end
+
+
+ 
+
+
+
+
+ 
+
+
 
   # def new
   #   @survey = DepressionQuestion.new
