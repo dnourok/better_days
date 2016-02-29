@@ -17,6 +17,7 @@ class QuestionsController < ApplicationController
 
   def create
     @survey = Question.new(survey_params)
+    # render @survey.getHelp
   end
 
   def survey_params

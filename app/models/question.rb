@@ -7,6 +7,23 @@ class Question < ApplicationRecord
 		self.total_points = [q_one, q_two, q_three, q_four, q_five, q_six, q_seven, q_eight, q_nine, q_ten, q_eleven, q_twelve, q_thirteen, q_fourteen, q_fifteen, q_sixteen, q_seventeen, q_eighteen, q_nineteen, q_twenty, q_twenty_one].reduce(:+)
 	end
 
+	# after_save do
+	# 	if self.total_points 
+			# greater than whatver
+			# can do the redirect here?
+			# or on_save
+
+	# 	end
+	# end 
+
+	# def getHelp
+	# 	if self.total_points == 100
+	# 		return 
+	# 	end
+	# end
+
+
+
 end
 
 # before_save is a built in method in rails

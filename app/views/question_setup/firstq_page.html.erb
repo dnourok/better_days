@@ -1,0 +1,20 @@
+<%= form_for @survey do |f| %>
+
+<!-- need to add question 1 here -->
+	<%= f.label "(1) how often do you feel sad?" %>
+
+	<%= f.radio_button :q_one, value: 0 %>
+	<%= f.label :q_one, "I do not feel sad.", value: 0 %>
+
+	<%= f.radio_button :q_one, value: 1 %>
+	<%= f.label :q_one, "I feel sad.", value: 1 %>
+
+	<%= f.radio_button :q_one, value: 2 %>
+	<%= f.label :q_one, "I am sad all the time and I can't snap out of it.", value: 2 %>
+
+	<%= f.radio_button :q_one, value: 3 %>
+	<%= f.label :q_one, "I am so sad and unhappy that I can't stand it.", value: 3 %>
+
+	<%= f.button :submit %>
+
+<% end %>
