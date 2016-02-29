@@ -35,3 +35,9 @@ def show
         render_wizard
     end
 end
+
+# i need to use foreign key to connect users and questions
+# need to add another wizard path at the endof the first page up until the last 
+# and the last submits it to the database
+# to get to the next page of questions need to put next_wizard_path
+# might need to change where the post method is
