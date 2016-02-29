@@ -9,19 +9,12 @@ class QuestionsController < ApplicationController
   end
 
   def new
-    @survey = Question.new
   end
 
   def edit
   end
 
   def create
-    @survey = Question.new(survey_params)
-    # render @survey.getHelp
-  end
-
-  def survey_params
-    params.require(:questions).permit(:q_one,:q_two,:q_three)
   end
 
   def destroy
@@ -36,8 +29,13 @@ end
 
 
  
+# def new
+#     @survey = Question.new
+#   end
 
-
+  # def survey_params
+  #   params.require(:questions).permit(:q_one,:q_two,:q_three)
+  # end
 
   # def new
   #   @survey = DepressionQuestion.new

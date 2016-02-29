@@ -1,7 +1,7 @@
-<%= form_for @survey do |f| %>
+<%= form_for @survey, url: wizard_path, method: :put do |f| %>
 
 <!-- need to add question 1 here -->
-	<%= f.label "(1) how often do you feel sad?" %>
+	<%= f.label "(1) How often do you feel sad?" %>
 
 	<%= f.radio_button :q_one, value: 0 %>
 	<%= f.label :q_one, "I do not feel sad.", value: 0 %>
@@ -14,8 +14,6 @@
 
 	<%= f.radio_button :q_one, value: 3 %>
 	<%= f.label :q_one, "I am so sad and unhappy that I can't stand it.", value: 3 %>
-
-	<%= f.button :submit %>
 
 <% end %>
 
@@ -34,9 +32,6 @@
 
 	<%= f.radio_button :q_two, value: 3 %>
 	<%= f.label :q_two, "I feel the future is hopeless and that things cannot improve.", value: 3 %>
-
-	<%= f.button :submit %>
-
 <% end %>
 
 
@@ -55,8 +50,6 @@
 
 	<%= f.radio_button :q_three, value: 3 %>
 	<%= f.label :q_three, "I feel I am a complete failure as a person.", value: 3 %>
-
-	<%= f.button :submit %>
 
 <% end %>
 
@@ -77,7 +70,6 @@
 	<%= f.radio_button :q_four, value: 3 %>
 	<%= f.label :q_four, "I am dissatisfied or bored with everything.", value: 3 %>
 
-	<%= f.button :submit %>
 <% end %>
 
 <%= form_for @survey do |f| %>
@@ -96,6 +88,6 @@
 	<%= f.radio_button :q_five, value: 3 %>
 	<%= f.label :q_five, "I feel guilty all of the time.", value: 3 %>
 
-	<%= f.button :submit %>
+	<%= f.submit :submit %>
 
 <% end %>

@@ -7,4 +7,5 @@ Rails.application.routes.draw do
 
   resources :users
   resources :questions
+  resources :question_setup
 end
