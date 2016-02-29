@@ -1,0 +1,51 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  q_one: 1
+  q_two: 1
+  q_three: 1
+  q_four: 1
+  q_five: 1
+  q_six: 1
+  q_seven: 1
+  q_eight: 1
+  q_nine: 1
+  q_ten: 1
+  q_eleven: 1
+  q_twelve: 1
+  q_thirteen: 1
+  q_fourteen: 1
+  q_fifteen: 1
+  q_sixteen: 1
+  q_seventeen: 1
+  q_eighteen: 1
+  q_nineteen: 1
+  q_twenty: 1
+  q_twenty_one: 1
+  total_points: 1
+  user_id: 1
+
+two:
+  q_one: 1
+  q_two: 1
+  q_three: 1
+  q_four: 1
+  q_five: 1
+  q_six: 1
+  q_seven: 1
+  q_eight: 1
+  q_nine: 1
+  q_ten: 1
+  q_eleven: 1
+  q_twelve: 1
+  q_thirteen: 1
+  q_fourteen: 1
+  q_fifteen: 1
+  q_sixteen: 1
+  q_seventeen: 1
+  q_eighteen: 1
+  q_nineteen: 1
+  q_twenty: 1
+  q_twenty_one: 1
+  total_points: 1
+  user_id: 1
