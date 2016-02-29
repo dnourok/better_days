@@ -1,7 +1,7 @@
-class DepressionQuestionsController < ApplicationController
+class QuestionsController < ApplicationController
 
   def index
-    render :index
+    # render :index
   end
 
   def create
