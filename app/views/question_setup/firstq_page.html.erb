@@ -1,6 +1,4 @@
-<!-- have to move all the radio buttons below the questions for every question! -->
-
-<%= form_for @survey, url: wizard_path, method: :put do |f| %>
+<%= form_for @survey, url: next_wizard_path, method: :put do |f| %>
 
 <!-- need to add question 1 here -->
 	<h3> 1. How often do you feel sad?</h3>
@@ -79,6 +77,6 @@
 	<%= f.label :q_five, "I feel guilty all of the time.", value: 3 %>
 	<%= f.radio_button :q_five, 3 %>
 
-	<%= f.submit :submit %>
+	<%= f.submit "Next" %>
 
 <% end %>
