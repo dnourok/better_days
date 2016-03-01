@@ -7,7 +7,9 @@
 #= require_self
 #= require_tree ./channels
 #
+
 @App ||= {}
 App.cable = ActionCable.createConsumer()
 
 # this is on client side - turn on so we create a consumer of this cable. 
+# dont connect till logged in
