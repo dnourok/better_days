@@ -3,10 +3,8 @@
 <%= form_for @survey, url: wizard_path, method: :put do |f| %>
 
 <!-- need to add question 1 here -->
-	<%= f.label "(1) How often do you feel sad?" %>
-	<h3>1. How often do you feel sad?</h3>
+	<h3> 1. How often do you feel sad?</h3>
 
-	
 	<%= f.label :q_one, "I do not feel sad.", value: 0 %>
 	<%= f.radio_button :q_one, 0 %>
 
@@ -22,7 +20,7 @@
 	<%= f.radio_button :q_one, 3 %>
 
 <!-- need to add question 2 here -->
-<h3>2. How often do you feel ...?</h3>
+<h3> 2. How do you feel about your future?</h3>
 
 	<%= f.label :q_two, "I am not particularly discouraged about the future.", value: 0 %>
 	<%= f.radio_button :q_two, 0 %>
@@ -37,7 +35,7 @@
 	<%= f.radio_button :q_two, 3 %>
 
 
-<h3>2. How often do you feel ...?</h3>
+<h3> 3. Do you see yourself as a failure?</h3>
 
 	<%= f.label :q_three, "I do not feel like a failure.", value: 0 %>
 	<%= f.radio_button :q_three, 0 %>
@@ -52,7 +50,7 @@
 	<%= f.radio_button :q_three, 3 %>
 
 <!-- need to add question 4 here -->
-<h3>2. How often do you feel ...?</h3>
+<h3> 4. Do you get satisfaction out of things?</h3>
 
 	<%= f.label :q_four, "I get as much satisfaction out of things as I used to.", value: 0 %>
 	<%= f.radio_button :q_four, 0 %>
@@ -67,7 +65,7 @@
 	<%= f.radio_button :q_four, 3 %>
 
 <!-- need to add question 5 here -->
-<h3>2. How often do you feel ...?</h3>
+<h3> 5. Do you ever feel guilty?</h3>
 
 	<%= f.label :q_five, "I don't feel particularly guilty", value: 0 %>
 	<%= f.radio_button :q_five, 0 %>
