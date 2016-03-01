@@ -1,97 +1,81 @@
 <%= form_for @survey do |f| %>
 
 <!-- need to add question 11 here -->
-	<%= f.radio_button :q_eleven, value: 0 %>
+<h3>11. How often do you feel ...?</h3>
+
 	<%= f.label :q_eleven, "I am no more irritated by things than I ever was.", value: 0 %>
+	<%= f.radio_button :q_eleven, value: 0 %>
 
-	<%= f.radio_button :q_eleven, value: 1 %>
 	<%= f.label :q_eleven, "I am slightly more irritated now than usual.", value: 1 %>
+	<%= f.radio_button :q_eleven, value: 1 %>
 
-	<%= f.radio_button :q_eleven, value: 2 %>
 	<%= f.label :q_eleven, "I am quite annoyed or irritated a good deal of the time.", value: 2 %>
+	<%= f.radio_button :q_eleven, value: 2 %>
 
-	<%= f.radio_button :q_eleven, value: 3 %>
 	<%= f.label :q_eleven, "I feel irritated all the time.", value: 3 %>
+	<%= f.radio_button :q_eleven, value: 3 %>
 
-	<%= f.button :submit %>
+<h3>12. How often do you feel ...?</h3>
 
-<% end %>
-
-<%= form_for @survey do |f| %>
-
-<!-- need to add question 12 here -->
-
-	<%= f.radio_button :q_twelve, value: 0 %>
 	<%= f.label :q_twelve, "I have not lost interest in other people.", value: 0 %>
+	<%= f.radio_button :q_twelve, value: 0 %>
 
-	<%= f.radio_button :q_twelve, value: 1 %>
 	<%= f.label :q_twelve, "I am less interested in other people than I used to be.", value: 1 %>
+	<%= f.radio_button :q_twelve, value: 1 %>
 
-	<%= f.radio_button :q_twelve, value: 2 %>
 	<%= f.label :q_twelve, "I have lost most of my interest in other people.", value: 2 %>
+	<%= f.radio_button :q_twelve, value: 2 %>
 
-	<%= f.radio_button :q_twelve, value: 3 %>
 	<%= f.label :q_twelve, "I have lost all of my interest in other people.", value: 3 %>
+	<%= f.radio_button :q_twelve, value: 3 %>
 
-	<%= f.button :submit %>
-
-<% end %>
-
-<%= form_for @survey do |f| %>
 
 <!-- need to add question 13 here -->
 
-	<%= f.radio_button :q_thirteen, value: 0 %>
+<h3>13. How often do you feel ...?</h3>
+
 	<%= f.label :q_thirteen, "I make decisions about as well as I ever could.", value: 0 %>
+	<%= f.radio_button :q_thirteen, value: 0 %>
 
-	<%= f.radio_button :q_thirteen, value: 1 %>
 	<%= f.label :q_thirteen, "I put off making decisions more than I used to.", value: 1 %>
+	<%= f.radio_button :q_thirteen, value: 1 %>
 
-	<%= f.radio_button :q_thirteen, value: 2 %>
 	<%= f.label :q_thirteen, "I have greater difficulty in making decisions more than I used to.", value: 2 %>
+	<%= f.radio_button :q_thirteen, value: 2 %>
 
-	<%= f.radio_button :q_thirteen, value: 3 %>
 	<%= f.label :q_thirteen, "I can't make decisions at all anymore.", value: 3 %>
+	<%= f.radio_button :q_thirteen, value: 3 %>
 
-	<%= f.button :submit %>
-
-<% end %>
-
-<%= form_for @survey do |f| %>
 
 <!-- need to add question 14 here -->
+<h3>14. How often do you feel ...?</h3>
 
-	<%= f.radio_button :q_fourteen, value: 0 %>
 	<%= f.label :q_fourteen, "I don't feel that I look any worse than I used to.", value: 0 %>
+	<%= f.radio_button :q_fourteen, value: 0 %>
 
-	<%= f.radio_button :q_fourteen, value: 1 %>
 	<%= f.label :q_fourteen, "I am worried that I am looking old or unattractive.", value: 1 %>
+	<%= f.radio_button :q_fourteen, value: 1 %>
 
-	<%= f.radio_button :q_fourteen, value: 2 %>
 	<%= f.label :q_fourteen, "I feel there are permanent changes in my appearance that make me look unattractive.", value: 2 %>
+	<%= f.radio_button :q_fourteen, value: 2 %>
 
-	<%= f.radio_button :q_fourteen, value: 3 %>
 	<%= f.label :q_fourteen, "I believe that I look ugly.", value: 3 %>
-
-	<%= f.button :submit %>
-
-<% end %>
-
-<%= form_for @survey do |f| %>
+	<%= f.radio_button :q_fourteen, value: 3 %>
 
 <!-- need to add question 15 here -->
+<h3>15. How often do you feel ...?</h3>
 
-	<%= f.radio_button :q_fifteen, value: 0 %>
 	<%= f.label :q_fifteen, "I can work about as well as before.", value: 0 %>
+	<%= f.radio_button :q_fifteen, value: 0 %>
 
-	<%= f.radio_button :q_fifteen, value: 1 %>
 	<%= f.label :q_fifteen, "It takes an extra effort to get started at doing something.", value: 1 %>
+	<%= f.radio_button :q_fifteen, value: 1 %>
 
-	<%= f.radio_button :q_fifteen, value: 2 %>
 	<%= f.label :q_fifteen, "I have to push myself very hard to do anything.", value: 2 %>
+	<%= f.radio_button :q_fifteen, value: 2 %>
 
-	<%= f.radio_button :q_fifteen, value: 3 %>
 	<%= f.label :q_fifteen, "I can't do any work at all.", value: 3 %>
+	<%= f.radio_button :q_fifteen, value: 3 %>
 
 	<%= f.button :submit %>
 

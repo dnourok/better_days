@@ -1,117 +1,98 @@
 <%= form_for @survey do |f| %>
 
 <!-- need to add question 16 here -->
-	<%= f.radio_button :q_sixteen, value: 0 %>
+<h3>1. How often do you feel ...?</h3>
 	<%= f.label :q_sixteen, "I can sleep as well as usual.", value: 0 %>
+	<%= f.radio_button :q_sixteen, value: 0 %>
 
-	<%= f.radio_button :q_sixteen, value: 1 %>
 	<%= f.label :q_sixteen, "I don't sleep as well as I used to.", value: 1 %>
+	<%= f.radio_button :q_sixteen, value: 1 %>
 
-	<%= f.radio_button :q_sixteen, value: 2 %>
 	<%= f.label :q_sixteen, "I wake up 1-2 hours earlier than usual and find it hard to get back to sleep.", value: 2 %>
+	<%= f.radio_button :q_sixteen, value: 2 %>
 
-	<%= f.radio_button :q_sixteen, value: 3 %>
 	<%= f.label :q_eleven, "I wake up several hours earlier than I used to and cannot get back to sleep.", value: 3 %>
+	<%= f.radio_button :q_sixteen, value: 3 %>
 
-	<%= f.button :submit %>
-
-<% end %>
-
-<%= form_for @survey do |f| %>
 
 <!-- need to add question 17 here -->
 
-	<%= f.radio_button :q_seventeen, value: 0 %>
+<h3>1. How often do you feel ...?</h3>
+
 	<%= f.label :q_seventeen, "I don't get more tired than usual.", value: 0 %>
+	<%= f.radio_button :q_seventeen, value: 0 %>
 
-	<%= f.radio_button :q_seventeen, value: 1 %>
 	<%= f.label :q_seventeen, "I get tired more easily than I used to.", value: 1 %>
+	<%= f.radio_button :q_seventeen, value: 1 %>
 
-	<%= f.radio_button :q_seventeen, value: 2 %>
 	<%= f.label :q_seventeen, "I get tired from doing almost anything.", value: 2 %>
+	<%= f.radio_button :q_seventeen, value: 2 %>
 
-	<%= f.radio_button :q_seventeen, value: 3 %>
 	<%= f.label :q_seventeen, "I am too tired to do anything.", value: 3 %>
+	<%= f.radio_button :q_seventeen, value: 3 %>
 
-	<%= f.button :submit %>
-
-<% end %>
-
-<%= form_for @survey do |f| %>
 
 <!-- need to add question 18 here -->
+<h3>1. How often do you feel ...?</h3>
 
-	<%= f.radio_button :q_eighteen, value: 0 %>
 	<%= f.label :q_eighteen, "My appetite is no worse than usual.", value: 0 %>
+	<%= f.radio_button :q_eighteen, value: 0 %>
 
-	<%= f.radio_button :q_eighteen, value: 1 %>
 	<%= f.label :q_eighteen, "My appetite is not as good as it used to be.", value: 1 %>
+	<%= f.radio_button :q_eighteen, value: 1 %>
 
-	<%= f.radio_button :q_eighteen, value: 2 %>
 	<%= f.label :q_eighteen, "My appetite is much worse now.", value: 2 %>
+	<%= f.radio_button :q_eighteen, value: 2 %>
 
-	<%= f.radio_button :q_eighteen, value: 3 %>
 	<%= f.label :q_eighteen, "I have no appetite at all anymore.", value: 3 %>
+	<%= f.radio_button :q_eighteen, value: 3 %>
 
-	<%= f.button :submit %>
-
-<% end %>
-
-<%= form_for @survey do |f| %>
 
 <!-- need to add question 19 here -->
+<h3>1. How often do you feel ...?</h3>
 
-	<%= f.radio_button :q_nineteen, value: 0 %>
 	<%= f.label :q_nineteen, "I haven't lost much weight, if any, lately.", value: 0 %>
+	<%= f.radio_button :q_nineteen, value: 0 %>
 
-	<%= f.radio_button :q_nineteen, value: 1 %>
 	<%= f.label :q_nineteen, "I have lost more or gained more than five pounds.", value: 1 %>
+	<%= f.radio_button :q_nineteen, value: 1 %>
 
-	<%= f.radio_button :q_nineteen, value: 2 %>
 	<%= f.label :q_fourteen, "I have lost or gained more than ten pounds.", value: 2 %>
+	<%= f.radio_button :q_nineteen, value: 2 %>
 
-	<%= f.radio_button :q_nineteen, value: 3 %>
 	<%= f.label :q_nineteen, "I have lost or gained more than fifteen pounds.", value: 3 %>
+	<%= f.radio_button :q_nineteen, value: 3 %>
 
-	<%= f.button :submit %>
-
-<% end %>
-
-<%= form_for @survey do |f| %>
 
 <!-- need to add question 20 here -->
+<h3>1. How often do you feel ...?</h3>
 
-	<%= f.radio_button :q_twenty, value: 0 %>
 	<%= f.label :q_twenty, "I am no more worried about my health than usual.", value: 0 %>
+	<%= f.radio_button :q_twenty, value: 0 %>
 
-	<%= f.radio_button :q_twenty, value: 1 %>
 	<%= f.label :q_twenty, "I am worried about physical problems like aches,pains, upset stomach, or constipation.", value: 1 %>
+	<%= f.radio_button :q_twenty, value: 1 %>
 
-	<%= f.radio_button :q_twenty, value: 2 %>
 	<%= f.label :q_ten, "I am very worried about physical problems and it's hard to think of much else.", value: 2 %>
+	<%= f.radio_button :q_twenty, value: 2 %>
 
-	<%= f.radio_button :q_twenty, value: 3 %>
 	<%= f.label :q_twenty, "I am so worried about my physical problems that I cannot think of anything else.", value: 3 %>
-
-	<%= f.button :submit %>
-
-<% end %>
-
-<%= form_for @survey do |f| %>
+	<%= f.radio_button :q_twenty, value: 3 %>
 
 <!-- need to add question 21 here -->
+<h3>1. How often do you feel ...?</h3>
 
-	<%= f.radio_button :q_twenty_one, value: 0 %>
 	<%= f.label :q_twenty_one, "I have not noticed any recent change in my interest in sex.", value: 0 %>
+	<%= f.radio_button :q_twenty_one, value: 0 %>
 
-	<%= f.radio_button :q_twenty_one, value: 1 %>
 	<%= f.label :q_twenty_one, "I am less interested in sex than I used to be.", value: 1 %>
+	<%= f.radio_button :q_twenty_one, value: 1 %>
 
-	<%= f.radio_button :q_twenty_one, value: 2 %>
 	<%= f.label :q_twenty_one, "I have almost no interest in sex.", value: 2 %>
+	<%= f.radio_button :q_twenty_one, value: 2 %>
 
-	<%= f.radio_button :q_twenty_one, value: 3 %>
 	<%= f.label :q_twenty_one, "I have lost interest in sex completely.", value: 3 %>
+	<%= f.radio_button :q_twenty_one, value: 3 %>
 
 	<%= f.button :submit %>
 

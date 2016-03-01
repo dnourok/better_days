@@ -1,7 +1,7 @@
 class QuestionSetupController < ApplicationController
 	include Wicked::Wizard
 
-	steps :firstq_page, :secondq_page, :thirdq_page, :forthq_page
+	steps :firstq_page, :secondq_page, :thirdq_page, :fourthq_page
 
 
 # 	def show
@@ -21,19 +21,31 @@ class QuestionSetupController < ApplicationController
 # end
 
 def show
-        @survey = Question.create(@user)
-        case steps
+    @survey = Question.new(user: current_user)
+    render_wizard
+end
+
+def update
+        @survey = current_user.questions.first_or_initialize(question_params)
+        # should maybe be a save here and not a create since the user will have already been created
+        # in this step with a session
+        case step
         when :firstq_page
-        @survey.update(params[:q_one, :q_two, :q_three, :q_four, :q_five])
-        when :question_two
-        @survey.update(params[:q_six, :q_seven, :q_eight, :q_nine, :q_ten])
-        when :question_three
-        @survey.update(params[:q_eleven, :q_twelve,:q_thirteen, :q_fourteen, :q_fifteen])
-        when :question_four
-        @survey.update(params[:q_sixteen, :q_seventeen, :q_eighteen, :q_nineteen, :q_twenty, :q_twenty_one])
+        @survey.update(question_params)
+        when :secondq_page
+        @survey.update(question_params)
+        when :thirdq_page
+        @survey.update(question_params)
+        when :fourthq_page
+        @survey.update(question_params)
+            # if @survey.total_points > 10
         end
         render_wizard
     end
+end
+
+def question_params
+    params.require(:question).permit(:q_one, :q_two, :q_three, :q_four, :q_five, :q_six, :q_seven, :q_eight, :q_nine, :q_ten, :q_eleven, :q_twelve, :q_thirteen, :q_fourteen, :q_fifteen, :q_sixteen, :q_seventeen, :q_eighteen, :q_nineteen, :q_twenty, :q_twenty_one)
 end
 
 # i need to use foreign key to connect users and questions
