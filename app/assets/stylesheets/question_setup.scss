@@ -4,3 +4,34 @@
 body{
 background-color: #FAEBD7;
 }
+
+.center-forms{
+	position: absolute;
+	left: 28%;
+	top: 10%;
+}
+
+.center-button{
+	position: absolute;
+	left: 43%;
+}
+
+.mdl-shadow--8dp{
+	width: 700px;
+}
+
+.mdl-card__title-text{
+	text-align: center;
+	vertical-align: middle;
+	font-weight: normal;
+}
+
+.mdl-card__supporting-text{
+	text-align: center;
+	font-size: 16px;
+}
+
+
+// only centers if I put the text with absolute 
+// set text inside to something else
+// set color background to something else
