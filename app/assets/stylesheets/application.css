@@ -15,7 +15,11 @@
  */
 
 body{
-background-color: #FAEBD7;
+background-color: #99c2ff;
+}
+
+.background_questions{
+	background-color: #FAEBD7;
 }
 
 .mdl-navigation__link{
