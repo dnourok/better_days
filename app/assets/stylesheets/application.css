@@ -27,4 +27,10 @@ background-color: #FAEBD7;
 	color: red;
 	/*font-weight: bold;*/
 }
+
+html, body, #map-canvas {
+  height: 100%;
+  margin: 0px;
+  padding: 0px
+}
 /*text-align:center*/

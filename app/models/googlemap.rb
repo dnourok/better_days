@@ -1,0 +1,2 @@
+class Googlemap < ApplicationRecord
+end

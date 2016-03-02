@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   # Serve websocket cable requests in-process
   root to: 'users#index'
   get '/chatroom' => 'rooms#show'
+  get '/maps' => 'googlemaps#index'
 
   resources :users
   resources :questions

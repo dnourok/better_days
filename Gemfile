@@ -28,6 +28,9 @@ gem 'jbuilder', '~> 2.0'
 gem 'bcrypt', '~> 3.1.7'
 
 gem 'wicked'
+gem 'geocoder'
+gem 'google_places'
+
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
