@@ -11,22 +11,23 @@
   <div class="mdl-card__supporting-text">
 <!-- need to add question 1 here -->
 	<h3 class="mdl-card__title-text"> 1. How often do you feel sad?</h3>
+	<div class="align_answers">
 <br>
-
-	<%= f.label :q_one, "I do not feel sad.", value: 0 %>
 	<%= f.radio_button :q_one, 0 %>
+	<%= f.label :q_one, "I do not feel sad.", value: 0 %>
 
 <br>
-	
-	<%= f.label :q_one, "I feel sad.", value: 1 %>
 	<%= f.radio_button :q_one, 1 %>
+	<%= f.label :q_one, "I feel sad.", value: 1 %>
 
 <br>
-	<%= f.label :q_one, "I am sad all the time and I can't snap out of it.", value: 2 %>
 	<%= f.radio_button :q_one, 2 %>
+	<%= f.label :q_one, "I am sad all the time and I can't snap out of it.", value: 2 %>
 <br>
-	<%= f.label :q_one, "I am so sad and unhappy that I can't stand it.", value: 3 %>
 	<%= f.radio_button :q_one, 3 %>
+	<%= f.label :q_one, "I am so sad and unhappy that I can't stand it.", value: 3 %>
+	
+</div>
 </div>
  </div>
 <br>
@@ -34,18 +35,20 @@
 <div class="mdl-card mdl-shadow--8dp">
   <div class="mdl-card__supporting-text">
 <h3 class="mdl-card__title-text"> 2. How do you feel about your future?</h3>
+<div class="align_answers">
 <br>
-	<%= f.label :q_two, "I am not particularly discouraged about the future.", value: 0 %>
 	<%= f.radio_button :q_two, 0 %>
+	<%= f.label :q_two, "I am not particularly discouraged about the future.", value: 0 %>
 <br>
-	<%= f.label :q_two, "I feel discouraged about the future.", value: 1 %>
 	<%= f.radio_button :q_two, 1 %>
+	<%= f.label :q_two, "I feel discouraged about the future.", value: 1 %>
 <br>
-	<%= f.label :q_two, "I feel I have nothing to look forward to.", value: 2 %>
 	<%= f.radio_button :q_two, 2 %>
+	<%= f.label :q_two, "I feel I have nothing to look forward to.", value: 2 %>
 <br>
-	<%= f.label :q_two, "I feel the future is hopeless and that things cannot improve.", value: 3 %>
 	<%= f.radio_button :q_two, 3 %>
+	<%= f.label :q_two, "I feel the future is hopeless and that things cannot improve.", value: 3 %>
+	</div>
 	</div>
 </div>
 
@@ -54,22 +57,21 @@
 <div class="mdl-card mdl-shadow--8dp">
   <div class="mdl-card__supporting-text">
 <h3 class="mdl-card__title-text"> 3. Do you see yourself as a failure?</h3>
-
+<div class="align_answers">
 <br>
-
-	<%= f.label :q_three, "I do not feel like a failure.", value: 0 %>
 	<%= f.radio_button :q_three, 0 %>
+	<%= f.label :q_three, "I do not feel like a failure.", value: 0 %>
 <br>
-	<%= f.label :q_three, "I feel I have failed more than the average person.", value: 1 %>
 	<%= f.radio_button :q_three, 1 %>
+	<%= f.label :q_three, "I feel I have failed more than the average person.", value: 1 %>
 <br>
-	<%= f.label :q_three, "As I look back on my life, all I can see is a lot of failures.", value: 2 %>
 	<%= f.radio_button :q_three, 2 %>
+	<%= f.label :q_three, "As I look back on my life, all I can see is a lot of failures.", value: 2 %>
 <br>
-	<%= f.label :q_three, "I feel I am a complete failure as a person.", value: 3 %>
 	<%= f.radio_button :q_three, 3 %>
+	<%= f.label :q_three, "I feel I am a complete failure as a person.", value: 3 %>
 <br>
-
+		</div>
 	</div>
 </div>
 
@@ -78,23 +80,22 @@
 <div class="mdl-card mdl-shadow--8dp">
   <div class="mdl-card__supporting-text">
 <h3 class="mdl-card__title-text"> 4. Do you get satisfaction out of things?</h3>
+<div class="align_answers">
 
 <br>
-
-	<%= f.label :q_four, "I get as much satisfaction out of things as I used to.", value: 0 %>
 	<%= f.radio_button :q_four, 0 %>
+	<%= f.label :q_four, "I get as much satisfaction out of things as I used to.", value: 0 %>
 <br>
-
-	<%= f.label :q_four, "I don't enjoy things the way I used to.", value: 1 %>
 	<%= f.radio_button :q_four, 1 %>
+	<%= f.label :q_four, "I don't enjoy things the way I used to.", value: 1 %>
 <br>
-	<%= f.label :q_four, "I don't get real satisfaction out of anything anymore.", value: 2 %>
 	<%= f.radio_button :q_four, 2 %>
+	<%= f.label :q_four, "I don't get real satisfaction out of anything anymore.", value: 2 %>
 <br>
-
-	<%= f.label :q_four, "I am dissatisfied or bored with everything.", value: 3 %>
 	<%= f.radio_button :q_four, 3 %>
+	<%= f.label :q_four, "I am dissatisfied or bored with everything.", value: 3 %>
 <br>
+			</div>
 		</div>
 	</div>
 
@@ -105,17 +106,19 @@
 <!-- need to add question 5 here -->
 <h3 class="mdl-card__title-text"> 5. Do you ever feel guilty?</h3>
 <br>
-	<%= f.label :q_five, "I don't feel particularly guilty", value: 0 %>
+<div class="align_answers">
 	<%= f.radio_button :q_five, 0 %>
+	<%= f.label :q_five, "I don't feel particularly guilty", value: 0 %>
 <br>
-	<%= f.label :q_five, "I feel guilty a good part of the time.", value: 1 %>
 	<%= f.radio_button :q_five, 1 %>
+	<%= f.label :q_five, "I feel guilty a good part of the time.", value: 1 %>
 <br>
-	<%= f.label :q_five, "I feel quite guilty most of the time.", value: 2 %>
 	<%= f.radio_button :q_five, 2 %>
+	<%= f.label :q_five, "I feel quite guilty most of the time.", value: 2 %>
 <br>
-	<%= f.label :q_five, "I feel guilty all of the time.", value: 3 %>
 	<%= f.radio_button :q_five, 3 %>
+	<%= f.label :q_five, "I feel guilty all of the time.", value: 3 %>
+		</div>
 	</div>
 </div>
 <br>

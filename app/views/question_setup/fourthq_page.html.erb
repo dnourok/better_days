@@ -5,24 +5,23 @@
   <div class="mdl-card__supporting-text">
 <!-- need to add question 16 here -->
 <h3 class="mdl-card__title-text"> 16. How well do you sleep? </h3>
+<div class="align_answers_four">
 <br>
-	<%= f.label :q_sixteen, "I can sleep as well as usual.", value: 0 %>
 	<%= f.radio_button :q_sixteen, 0 %>
+	<%= f.label :q_sixteen, "I can sleep as well as usual.", value: 0 %>
 <br>
-
-	<%= f.label :q_sixteen, "I don't sleep as well as I used to.", value: 1 %>
 	<%= f.radio_button :q_sixteen, 1 %>
+	<%= f.label :q_sixteen, "I don't sleep as well as I used to.", value: 1 %>
 <br>
-
-	<%= f.label :q_sixteen, "I wake up 1-2 hours earlier than usual and find it hard to get back to sleep.", value: 2 %>
 	<%= f.radio_button :q_sixteen, 2 %>
+	<%= f.label :q_sixteen, "I wake up 1-2 hours earlier than usual and find it hard to get back to sleep.", value: 2 %>
 <br>
-
-	<%= f.label :q_eleven, "I wake up several hours earlier than I used to and cannot get back to sleep.", value: 3 %>
 	<%= f.radio_button :q_sixteen, 3 %>
+	<%= f.label :q_eleven, "I wake up several hours earlier than I used to and cannot get back to sleep.", value: 3 %>
 <br>
-</div>
- </div>
+			</div>
+		</div>
+ 	</div>
 <br>
 
 <div class="mdl-card mdl-shadow--8dp">
@@ -31,23 +30,21 @@
 <!-- need to add question 17 here -->
 
 <h3 class="mdl-card__title-text"> 17. Do you get tired a lot?</h3>
+<div class="align_answers_four">
 <br>
-
-	<%= f.label :q_seventeen, "I don't get more tired than usual.", value: 0 %>
 	<%= f.radio_button :q_seventeen, 0 %>
+	<%= f.label :q_seventeen, "I don't get more tired than usual.", value: 0 %>
 <br>
-
-	<%= f.label :q_seventeen, "I get tired more easily than I used to.", value: 1 %>
 	<%= f.radio_button :q_seventeen, 1 %>
+	<%= f.label :q_seventeen, "I get tired more easily than I used to.", value: 1 %>
 <br>
-
-	<%= f.label :q_seventeen, "I get tired from doing almost anything.", value: 2 %>
 	<%= f.radio_button :q_seventeen, 2 %>
+	<%= f.label :q_seventeen, "I get tired from doing almost anything.", value: 2 %>
 <br>
-
-	<%= f.label :q_seventeen, "I am too tired to do anything.", value: 3 %>
 	<%= f.radio_button :q_seventeen, 3 %>
+	<%= f.label :q_seventeen, "I am too tired to do anything.", value: 3 %>
 <br>
+		</div>
 	</div>
 </div>
 
@@ -58,23 +55,21 @@
 <br>
 <!-- need to add question 18 here -->
 <h3 class="mdl-card__title-text"> 18. How do you feel about your appetite?</h3>
+<div class="align_answers_four">
 <br>
-
-	<%= f.label :q_eighteen, "My appetite is no worse than usual.", value: 0 %>
 	<%= f.radio_button :q_eighteen, 0 %>
+	<%= f.label :q_eighteen, "My appetite is no worse than usual.", value: 0 %>
 <br>
-
-	<%= f.label :q_eighteen, "My appetite is not as good as it used to be.", value: 1 %>
 	<%= f.radio_button :q_eighteen, 1 %>
+	<%= f.label :q_eighteen, "My appetite is not as good as it used to be.", value: 1 %>
 <br>
-
-	<%= f.label :q_eighteen, "My appetite is much worse now.", value: 2 %>
 	<%= f.radio_button :q_eighteen, 2 %>
+	<%= f.label :q_eighteen, "My appetite is much worse now.", value: 2 %>
 <br>
-
-	<%= f.label :q_eighteen, "I have no appetite at all anymore.", value: 3 %>
 	<%= f.radio_button :q_eighteen, 3 %>
+	<%= f.label :q_eighteen, "I have no appetite at all anymore.", value: 3 %>
 <br>
+		</div>
 	</div>
 </div>
 <br>
@@ -83,23 +78,21 @@
 <br>
 <!-- need to add question 19 here -->
 <h3 class="mdl-card__title-text"> 19. Have you lost any weight lately?</h3>
+<div class="align_answers_four">
 <br>
-
-	<%= f.label :q_nineteen, "I haven't lost much weight, if any, lately.", value: 0 %>
 	<%= f.radio_button :q_nineteen, 0 %>
+	<%= f.label :q_nineteen, "I haven't lost much weight, if any, lately.", value: 0 %>
 <br>
-
-	<%= f.label :q_nineteen, "I have lost more or gained more than five pounds.", value: 1 %>
 	<%= f.radio_button :q_nineteen, 1 %>
+	<%= f.label :q_nineteen, "I have lost more or gained more than five pounds.", value: 1 %>
 <br>
-
-	<%= f.label :q_fourteen, "I have lost or gained more than ten pounds.", value: 2 %>
 	<%= f.radio_button :q_nineteen, 2 %>
+	<%= f.label :q_fourteen, "I have lost or gained more than ten pounds.", value: 2 %>
 <br>
-
-	<%= f.label :q_nineteen, "I have lost or gained more than fifteen pounds.", value: 3 %>
 	<%= f.radio_button :q_nineteen, 3 %>
+	<%= f.label :q_nineteen, "I have lost or gained more than fifteen pounds.", value: 3 %>
 <br>
+		</div>
 	</div>
 </div>
 <br>
@@ -108,23 +101,22 @@
 
 <!-- need to add question 20 here -->
 <h3 class="mdl-card__title-text"> 20. Are you worried about your health?</h3>
-	<br>
-	<%= f.label :q_twenty, "I am no more worried about my health than usual.", value: 0 %>
+	<div class="align_answers_four">
+		<br>
 	<%= f.radio_button :q_twenty, 0 %>
+	<%= f.label :q_twenty, "I am no more worried about my health than usual.", value: 0 %>
 	<br>
-
-	<%= f.label :q_twenty, "I am worried about physical problems like aches,pains, upset stomach, or constipation.", value: 1 %>
 	<%= f.radio_button :q_twenty, 1 %>
+	<%= f.label :q_twenty, "I am worried about physical problems like aches,pains, upset stomach, or constipation.", value: 1 %>
 	<br>
-
-	<%= f.label :q_ten, "I am very worried about physical problems and it's hard to think of much else.", value: 2 %>
 	<%= f.radio_button :q_twenty, 2 %>
+	<%= f.label :q_ten, "I am very worried about physical problems and it's hard to think of much else.", value: 2 %>
 
 <br>
-
-	<%= f.label :q_twenty, "I am so worried about my physical problems that I cannot think of anything else.", value: 3 %>
 	<%= f.radio_button :q_twenty, 3 %>
+	<%= f.label :q_twenty, "I am so worried about my physical problems that I cannot think of anything else.", value: 3 %>
 <br>
+		</div>
 	</div>
 </div>
 <br>
@@ -133,22 +125,27 @@
 
 <!-- need to add question 21 here -->
 <h3 class="mdl-card__title-text"> 21. Has your interest in sex changed?</h3>
+<div class="align_answers_four">
 <br>
-	<%= f.label :q_twenty_one, "I have not noticed any recent change in my interest in sex.", value: 0 %>
 	<%= f.radio_button :q_twenty_one, 0 %>
+	<%= f.label :q_twenty_one, "I have not noticed any recent change in my interest in sex.", value: 0 %>
 <br>
-	<%= f.label :q_twenty_one, "I am less interested in sex than I used to be.", value: 1 %>
 	<%= f.radio_button :q_twenty_one, 1 %>
+	<%= f.label :q_twenty_one, "I am less interested in sex than I used to be.", value: 1 %>
 <br>
-	<%= f.label :q_twenty_one, "I have almost no interest in sex.", value: 2 %>
 	<%= f.radio_button :q_twenty_one, 2 %>
+	<%= f.label :q_twenty_one, "I have almost no interest in sex.", value: 2 %>
 <br>
-	<%= f.label :q_twenty_one, "I have lost interest in sex completely.", value: 3 %>
 	<%= f.radio_button :q_twenty_one, 3 %>
-<br>
-	<%= f.submit :submit, :class => "mdl-button mdl-js-button mdl-button--raised mdl-button--colored" %>
+	<%= f.label :q_twenty_one, "I have lost interest in sex completely.", value: 3 %>
 <br>
 	</div>
 </div>
+</div>
+<br>
+	<div class="center-button">
+	<%= f.submit :submit, :class => "mdl-button mdl-js-button mdl-button--raised mdl-button--colored" %>
+	</div>
+
 <% end %>
 </div>
