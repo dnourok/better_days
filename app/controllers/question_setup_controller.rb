@@ -27,15 +27,16 @@ def update
         render_wizard @survey
         when :answers_save
             @survey.update(question_params)
-            if @survey.total_points =< 25
+            if @survey.total_points <= 25
                 redirect_to '/chatroom'
-            if @survey.total_points > 25 && @survey.total_points < 40
+            end
+            # if @survey.total_points > 25 && @survey.total_points <= 39
             # if ((26..39).to_a).include? @survey.total_points 
                 # redirect to resources
-            else
-                @survey.total_points >= 40 
+            # else
+            #     @survey.total_points >= 40 
                 # redirect_to 'https://www.google.com'
-            end
+            # end
             # if @survey.total_points > 10
         end
     end
