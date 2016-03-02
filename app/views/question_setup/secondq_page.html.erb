@@ -1,4 +1,5 @@
-<%= form_for @survey, url: next_wizard_path, method: :put do |f| %>
+<%= form_for @survey, url: wizard_path, method: :put do |f| %>
+<%= f.hidden_field :step, value: step %>
 
 <!-- need to add question 6 here -->
 <h3> 6. Do you feel like you are being punished?</h3>
@@ -9,7 +10,7 @@
 	<%= f.radio_button :q_six, 1 %>
 
 	<%= f.label :q_six, "I expect to be punished.", value: 2 %>
-	<%= f.radio_button :q_five, 2 %>
+	<%= f.radio_button :q_six, 2 %>
 
 	<%= f.label :q_six, "I feel I am being punished.", value: 3 %>
 	<%= f.radio_button :q_six, 3 %>

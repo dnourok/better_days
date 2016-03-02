@@ -1,6 +1,7 @@
 <!-- add header here that says better days page 1/4 for questions -->
 <div class="center-forms">
-<%= form_for @survey, url: next_wizard_path, method: :put do |f| %>
+<%= form_for @survey, url: wizard_path, method: :put do |f| %>
+<%= f.hidden_field :step, value: step %>
 <div class="mdl-card mdl-shadow--8dp">
   <div class="mdl-card__supporting-text">
 <!-- need to add question 1 here -->

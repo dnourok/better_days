@@ -22,4 +22,9 @@ background-color: #FAEBD7;
   color:black !important;
 }
 
-text-align:center
+.field_with_errors {
+	display: inline-block;
+	color: red;
+	/*font-weight: bold;*/
+}
+/*text-align:center*/

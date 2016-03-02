@@ -1,4 +1,5 @@
-<%= form_for @survey, url: next_wizard_path, method: :put do |f| %>
+<%= form_for @survey, url: wizard_path, method: :put do |f| %>
+<%= f.hidden_field :step, value: step %>
 
 <!-- need to add question 11 here -->
 <h3> 11. Are you easily irritaited?</h3>

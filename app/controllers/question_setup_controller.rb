@@ -1,10 +1,10 @@
 class QuestionSetupController < ApplicationController
 	include Wicked::Wizard
 
-	steps :firstq_page, :secondq_page, :thirdq_page, :fourthq_page
+	steps :firstq_page, :secondq_page, :thirdq_page, :fourthq_page, :answers_save
 
 def show
-    @survey = Question.new(user: current_user)
+    @survey = current_user.questions.first_or_initialize()
     render_wizard
 end
 
@@ -15,23 +15,30 @@ def update
         case step
         when :firstq_page
         @survey.update(question_params)
-        render_wizard
+        render_wizard @survey
         when :secondq_page
         @survey.update(question_params)
-        render_wizard
+        render_wizard @survey
         when :thirdq_page
         @survey.update(question_params)
-        render_wizard
+        render_wizard @survey
         when :fourthq_page
         @survey.update(question_params)
-        redirect_to 'http://www.google.com'
+        render_wizard @survey
+        when :answers_save
+            @survey.update(question_params)
+            if @survey.total_points > 30
+                redirect_to '/chatroom'
+            else
+                redirect_to 'https://www.google.com'
+            end
             # if @survey.total_points > 10
         end
     end
 end
 
 def question_params
-    params.require(:question).permit(:q_one, :q_two, :q_three, :q_four, :q_five, :q_six, :q_seven, :q_eight, :q_nine, :q_ten, :q_eleven, :q_twelve, :q_thirteen, :q_fourteen, :q_fifteen, :q_sixteen, :q_seventeen, :q_eighteen, :q_nineteen, :q_twenty, :q_twenty_one)
+    params.require(:question).permit(:step, :q_one, :q_two, :q_three, :q_four, :q_five, :q_six, :q_seven, :q_eight, :q_nine, :q_ten, :q_eleven, :q_twelve, :q_thirteen, :q_fourteen, :q_fifteen, :q_sixteen, :q_seventeen, :q_eighteen, :q_nineteen, :q_twenty, :q_twenty_one)
 end
 
 # i need to use foreign key to connect users and questions
