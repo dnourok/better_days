@@ -12,6 +12,7 @@ class UsersController < ApplicationController
   end
 
   def update
+    @user = User.update
   end
 
   def destroy

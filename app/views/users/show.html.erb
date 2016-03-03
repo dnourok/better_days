@@ -1,0 +1,8 @@
+<!-- So form goes here and then when they press submit that is how they updat their profile -->
+
+<%= form_for @user, method: :update do |user_signup| %>
+  Full Name: <%= user_signup.text_field :full_name %>
+  Email: <%= user_signup.text_field :email %>
+  Password: <%= user_signup.text_field :password_digest %>
+  <%= user_signup.button 'submit' %>
+<% end %>
