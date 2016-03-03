@@ -1,7 +1,10 @@
 class QuestionSetupController < ApplicationController
 	include Wicked::Wizard
 
-	steps :firstq_page, :secondq_page, :thirdq_page, :fourthq_page, :answers_save
+	steps :firstq_page, :secondq_page, :thirdq_page, :fourthq_page
+
+    LOW_RISK_VAL = 25
+    HIGH_RISK_VAL = 40
 
 def show
     @survey = current_user.questions.first_or_initialize()
@@ -10,6 +13,7 @@ end
 
 def update
         @survey = current_user.questions.first_or_initialize(question_params)
+
         # should maybe be a save here and not a create since the user will have already been created
         # in this step with a session
         case step
@@ -24,20 +28,16 @@ def update
         render_wizard @survey
         when :fourthq_page
         @survey.update(question_params)
-        render_wizard @survey
-        when :answers_save
-            @survey.update(question_params)
-            if @survey.total_points <= 25
+            if current_user.full_name.nil?
+              redirect_to "/users/#{current_user.id}/edit"      
+            elsif @survey.total_points <= LOW_RISK_VAL
                 redirect_to '/chatroom'
-            # if @survey.total_points > 25 && @survey.total_points <= 39
-            # # if ((26..39).to_a).include? @survey.total_points 
-            #     redirect to '/chatroom'
-            else
-                @survey.total_points >= 40 
+            elsif @survey.total_points > LOW_RISK_VAL && @survey.total_points < HIGH_RISK_VAL
+            # if ((26..39).to_a).include? @survey.total_points 
+                redirect_to '/chatroom'
+            elsif @survey.total_points >= HIGH_RISK_VAL      
                 redirect_to '/maps'
             end
-            # end
-            # if @survey.total_points > 10
         end
     end
 end
@@ -45,6 +45,14 @@ end
 def question_params
     params.require(:question).permit(:step, :q_one, :q_two, :q_three, :q_four, :q_five, :q_six, :q_seven, :q_eight, :q_nine, :q_ten, :q_eleven, :q_twelve, :q_thirteen, :q_fourteen, :q_fifteen, :q_sixteen, :q_seventeen, :q_eighteen, :q_nineteen, :q_twenty, :q_twenty_one)
 end
+
+# def signin_user
+# @name = User.find(params[:id]).full_name
+# end
+
+# def user_params
+#     params.require(:user).permit(:id, :full_name, :email, :password)
+# end
 
 # i need to use foreign key to connect users and questions
 # need to add another wizard path at the endof the first page up until the last 

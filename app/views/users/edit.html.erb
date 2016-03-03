@@ -1,8 +1,17 @@
 <!-- So form goes here and then when they press submit that is how they updat their profile -->
-
+<div class="center-forms">
+	<div class="mdl-card mdl-shadow--8dp">
+		<h2 class="mdl-card__title"> Sign up </h2>
 <%= form_for @user, method: :put do |user_signup| %>
   Full Name: <%= user_signup.text_field :full_name %>
   Email: <%= user_signup.text_field :email %>
   Password: <%= user_signup.text_field :password_digest %>
   <%= user_signup.button 'submit' %>
+  </div>
+
 <% end %>
+</div>
+
+
+
+
