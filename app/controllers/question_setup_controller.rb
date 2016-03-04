@@ -29,7 +29,9 @@ def update
         when :fourthq_page
         @survey.update(question_params)
             if current_user.full_name.nil?
-              redirect_to "/users/#{current_user.id}/edit"      
+              redirect_to "/users/#{current_user.id}/edit"
+                    # put a unless click.on or something for skip and then move on to the others
+                    # when click submit move onto others
             elsif @survey.total_points <= LOW_RISK_VAL
                 redirect_to '/chatroom'
             elsif @survey.total_points > LOW_RISK_VAL && @survey.total_points < HIGH_RISK_VAL
@@ -45,14 +47,6 @@ end
 def question_params
     params.require(:question).permit(:step, :q_one, :q_two, :q_three, :q_four, :q_five, :q_six, :q_seven, :q_eight, :q_nine, :q_ten, :q_eleven, :q_twelve, :q_thirteen, :q_fourteen, :q_fifteen, :q_sixteen, :q_seventeen, :q_eighteen, :q_nineteen, :q_twenty, :q_twenty_one)
 end
-
-# def signin_user
-# @name = User.find(params[:id]).full_name
-# end
-
-# def user_params
-#     params.require(:user).permit(:id, :full_name, :email, :password)
-# end
 
 # i need to use foreign key to connect users and questions
 # need to add another wizard path at the endof the first page up until the last 
