@@ -51,4 +51,22 @@ html, body, #map-canvas {
 	color: blue !important;
 }
 
+.chat_color{
+	color: black !important;
+	text-align: center !important;
+}
+
+.align_messages{
+	color: black;
+	text-align: center;
+	padding-left: 40px;
+	padding-right: 60px;
+	left: 15%;
+	top: 25%;
+}
+
+/*.bottom_main{
+	top: 125%;
+	margin-bottom: 415px;
+}*/
 /*text-align:center*/
