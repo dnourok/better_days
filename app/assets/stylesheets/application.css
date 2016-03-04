@@ -43,5 +43,12 @@ html, body, #map-canvas {
 	max-height:100%;
 }*/
 
+.mdl-layout-title{
+	color: black	;
+}
+
+.mdl-navigation__link{
+	color: blue !important;
+}
 
 /*text-align:center*/

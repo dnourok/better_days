@@ -1,14 +1,14 @@
 <style>
 .demo-layout-transparent {
-  background: url('../assets/demos/transparent.jpg') center / cover;
+  background: url(<%= asset_path 'cover.jpg' %>) center / cover;
 }
 .demo-layout-transparent .mdl-layout__header,
 .demo-layout-transparent .mdl-layout__drawer-button {
   /* This background is dark, so we set text to white. Use 87% black instead if
      your background is light. */
-  color: black;
+  color: white;
   .navigation__link{
-    color:black;
+    color:white;
   }
 }
 </style>
@@ -25,12 +25,7 @@
     </div>
   </header>
   <div class="mdl-layout__drawer">
-
-
-
-
     <span class="mdl-layout-title">Welcome</span>
-
     <div class="test-toggle">
     <p> Better Days is an app designed to meet your needs by helping you connect to others. The self evaluated test is for your benefit but in no way hinders you from using the app. So if you want to jump straight to the chat, find resources or a hospital near you you can find the links below.</p>
     </div>
@@ -57,6 +52,10 @@
   </div>
 </div>
 <body>
+
+<!-- <blockquote class="imgur-embed-pub" lang="en" data-id="yURoHrB"><a href="//imgur.com/yURoHrB">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script> -->
+
+<!-- <img src="../images/cover.jpg" alt="cover" style="width:304px;height:228px;"> -->
 
 
  <div class="bottom_main">
